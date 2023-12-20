@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  background-color: var(white);
+  color: var(#212529);
+}
+
+::selection {
+  background-color: #b8926a;
+  color: #2d2d2b;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 10.8rem;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+  transition: 0.8s;
+  background: linear-gradient(var(--second-text-color), rgb(255, 255, 255));
+}
+
+.d-block {
+  display: flex !important;
+}
+
+#header .main {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem;
+}
+#header .main .logo-nav {
+  display: flex;
+  gap: 3.4rem;
+}
+#header .main .logo-nav nav ul li a {
+  color: black;
+}
+#header .main .logo-nav .logo a {
+  color: black;
+}
+#header .main .logo-nav .nav_list {
+  display: flex;
+  gap: 1.5rem;
+}
+#header .main .button {
+  display: flex;
+  gap: 1.4rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+#header .main .button:hover {
+  background-color: #212529;
+  color: white;
+}
+
+#hero {
+  background-color: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 300px;
+}
+#hero .banner {
+  text-align: center;
+}
+#hero .banner_title {
+  margin-bottom: 1rem;
+}
+
+#shop .cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 0;
+  gap: 30px;
+}
+#shop .cards .card {
+  width: 21.25%;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-radius: 5px;
+  gap: 5%;
+  position: relative;
+}
+#shop .cards .card .sale {
+  position: absolute;
+  top: 2.5%;
+  left: 84.5%;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  background-color: black;
+}
+#shop .cards .card_image {
+  width: 100%;
+  height: 200px;
+}
+#shop .cards .card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+#shop .cards .card_content .card_content_price {
+  padding-top: 10px;
+  font-size: 20px;
+}
+#shop .cards .card_content_button {
+  background-color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 10px 0 30px 0;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#shop .cards .card_content_button:hover {
+  background-color: #212529;
+  color: white;
+}
+
+footer .footer {
+  width: 100%;
+  background-color: #212529;
+  padding: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
